@@ -156,7 +156,6 @@ nav {
     border-left: 2px solid var(--border-color);
     box-shadow: -20px 0 60px rgba(0, 0, 0, 0.1);
     visibility: hidden;
-    /* Prevent overflow when closed */
 }
 
 #mobile-menu.active {
@@ -398,6 +397,77 @@ img {
     font-size: 18px;
 }
 
+/* CTA Section Styles */
+.final-cta-section {
+    padding: 100px 0;
+}
+
+.cta-card {
+    text-align: center;
+    background: var(--surface-color);
+    padding: 80px 40px;
+    border-radius: 40px;
+    border: 3px solid var(--border-color);
+    box-shadow: 10px 10px 0 var(--border-color);
+}
+
+.cta-card h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    color: var(--text-primary);
+}
+
+.cta-card p {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+/* Footer Styles */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 80px 40px;
+}
+
+.footer-info .logo {
+    margin-bottom: 24px;
+}
+
+.footer-group h4 {
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.footer-group ul {
+    list-style: none;
+}
+
+.footer-group a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+    font-weight: 600;
+}
+
+.footer-group a:hover {
+    color: var(--accent-color);
+}
+
+.footer-email {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+}
+
+.footer-bottom {
+    padding: 40px;
+    border-top: 2px solid var(--border-color);
+    text-align: center;
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -444,6 +514,10 @@ img {
 
     .nav-links a {
         font-size: 14px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -507,6 +581,20 @@ img {
     .btn {
         width: 100%;
     }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .footer-info {
+        margin-bottom: 20px;
+    }
+
+    .footer-info .logo {
+        margin: 0 auto 24px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -546,6 +634,18 @@ img {
 
     .feature-buttons {
         gap: 12px;
+    }
+
+    .cta-card {
+        padding: 50px 20px;
+    }
+
+    .cta-card h2 {
+        font-size: 2rem;
+    }
+
+    .cta-card p {
+        font-size: 1.1rem;
     }
 
     .logo img {
