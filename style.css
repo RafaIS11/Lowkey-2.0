@@ -20,12 +20,12 @@
 }
 
 [data-theme="dark"] {
-    --bg-color: #0F172A;
-    --surface-color: #1E293B;
+    --bg-color: #000000;
+    --surface-color: #111111;
     --text-primary: #FFFFFF;
-    --text-secondary: #94A3B8;
-    --border-color: #334155;
-    --header-bg: rgba(15, 23, 42, 0.95);
+    --text-secondary: #A1A1AA;
+    --border-color: #27272A;
+    --header-bg: rgba(0, 0, 0, 0.9);
 }
 
 /* Base Styles */
@@ -43,6 +43,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -281,8 +282,13 @@ nav {
     overflow: hidden;
     background-color: #FFFFFF;
     box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.6s var(--spring-easing);
+    transition: transform 0.6s var(--spring-easing), background-color 0.3s ease;
     width: 100%;
+}
+
+[data-theme="dark"] .hero-visual,
+[data-theme="dark"] .feature-visual {
+    background-color: var(--surface-color);
 }
 
 .hero-visual:hover,
@@ -495,6 +501,17 @@ img {
     color: var(--text-primary);
 }
 
+[data-theme="dark"] .btn-primary {
+    background: #FFFFFF;
+    color: #121212;
+    border-color: #FFFFFF;
+}
+
+[data-theme="dark"] .btn-secondary {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
 /* Animation Base */
 .animate-on-scroll {
     opacity: 1;
@@ -657,15 +674,22 @@ img {
     }
 }
 
-/* Dark Mode Mix-Blend Fix */
+/* Dark Mode Image Filter */
 [data-theme="dark"] img {
     mix-blend-mode: screen;
     filter: invert(1) brightness(1.2);
+    opacity: 0.9;
 }
 
 [data-theme="dark"] .brand-logo-img {
     filter: none;
     mix-blend-mode: normal;
+    opacity: 1;
+}
+
+[data-theme="dark"] .logo img {
+    filter: invert(1);
+    mix-blend-mode: normal !important;
 }
 
 /* Finance Badge Style (INLINE BELOW TEXT) */
