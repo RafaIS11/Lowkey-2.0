@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowkey Project | Claridad Mental y Sistemas Conectados</title>
+    <meta name="description"
+        content="Ecosistema de herramientas para construir claridad mental: Second Brain, UniversityGem y Keto Coach.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="lowkey_logo.jpg">
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <img src="lowkey_logo.jpg" alt="Lowkey">
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#second-brain">Sistemas</a></li>
+                <li><a href="#university-gem">UniversityGem</a></li>
+                <li><a href="#keto-coach">Keto Coach</a></li>
+                <li><a href="#lowkey-finance">Finance</a></li>
+                <li><a href="#integration">Integración</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2" />
+                        <path d="M12 20v2" />
+                        <path d="m4.93 4.93 1.41 1.41" />
+                        <path d="m17.66 17.66 1.41 1.41" />
+                        <path d="M2 12h2" />
+                        <path d="M20 12h2" />
+                        <path d="m6.34 17.66-1.41 1.41" />
+                        <path d="m19.07 4.93-1.41 1.41" />
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                    </svg>
+                </button>
+                <div id="mobile-menu-btn" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#second-brain">Sistemas</a></li>
+                <li><a href="#university-gem">UniversityGem</a></li>
+                <li><a href="#keto-coach">Keto Coach</a></li>
+                <li><a href="#lowkey-finance">Finance</a></li>
+                <li><a href="#integration">Integración</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section id="hero" class="hero-section container">
+            <div class="hero-content animate-on-scroll">
+                <h1>Construir claridad mental con sistemas conectados.</h1>
+                <p class="subheadline">Sin trucos. Sin motivación vacía. Solo herramientas reales, crecimiento real y
+                    una mente construida para crear.</p>
+                <div class="hero-buttons">
+                    <a href="https://universitygem.app" class="btn btn-primary">Prueba UniversityGem</a>
+                    <a href="#second-brain" class="btn btn-secondary">Explora Second Brain</a>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <img src="hero_thinking_flat_white_v3_1769623140777.png" alt="Claridad Mental">
+            </div>
+        </section>
+
+        <!-- Section 2: Second Brain -->
+        <section id="second-brain" class="feature-section container">
+            <div class="feature-grid">
+                <div class="feature-content animate-on-scroll">
+                    <h2>Descubre el poder de Second Brain.</h2>
+                    <p class="subheadline">Todo tu trabajo e ideas en un solo sistema. Planificación y seguimiento sin
+                        fisuras para una vida organizada.</p>
+                    <ul class="feature-bullets">
+                        <li><span class="bullet-check">✓</span> Organiza tareas y proyectos sin esfuerzo.</li>
+                        <li><span class="bullet-check">✓</span> Rastrea tu progreso e hitos.</li>
+                        <li><span class="bullet-check">✓</span> Captura y desarrolla tus ideas al instante.</li>
+                    </ul>
+                    <div class="feature-buttons">
+                        <a href="#" class="btn btn-primary">Descargar Template</a>
+                        <a href="#" class="btn btn-secondary">Ver Avance</a>
+                    </div>
+                </div>
+                <div class="feature-visual animate-on-scroll">
+                    <img src="second_brain_organizing_flat_white_v3_1769623187593.png" alt="Second Brain">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: UniversityGem (IMAGE SIZE FIXED) -->
+        <section id="university-gem" class="feature-section container">
+            <div class="feature-grid reverse">
+                <div class="feature-content animate-on-scroll">
+                    <h2>UniversityGem: Tu Mentor de IA Personal</h2>
+                    <p class="subheadline">Transforma cómo adquieres conocimiento con orientación personalizada diseñada
+                        para tu flujo de trabajo.</p>
+                    <ul class="feature-bullets">
+                        <li><span class="bullet-check">✓</span> <b>Aprendizaje Inteligente:</b> Guía para un estudio
+                            profundo.</li>
+                        <li><span class="bullet-check">✓</span> <b>Insights Estratégicos:</b> Conocimiento oculto
+                            relevado.</li>
+                        <li><span class="bullet-check">✓</span> <b>Exploración Proactiva:</b> Expande tus límites de
+                            aprendizaje.</li>
+                    </ul>
+                    <div class="feature-buttons">
+                        <a href="https://universitygem.app" class="btn btn-primary">Entrar a UniversityGem</a>
+                    </div>
+                </div>
+                <div class="feature-visual animate-on-scroll">
+                    <img src="universitygem_logo_v1.png" alt="UniversityGem Logo Visual" class="brand-logo-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Keto Coach -->
+        <section id="keto-coach" class="feature-section container">
+            <div class="feature-grid reverse">
+                <div class="feature-content animate-on-scroll">
+                    <h2>Keto Coach: Nutrición con IA</h2>
+                    <p class="subheadline">Gestiona tu dieta keto con precisión y simplicidad extrema.</p>
+                    <ul class="feature-bullets">
+                        <li><span class="bullet-check">✓</span> Rastreador inteligente de macros.</li>
+                        <li><span class="bullet-check">✓</span> Recetas adaptadas a tu tiempo.</li>
+                        <li><span class="bullet-check">✓</span> Generador de listas dinámico.</li>
+                    </ul>
+                    <div class="feature-buttons">
+                        <a href="#" class="btn btn-primary">Descargar Template</a>
+                        <a href="#" class="btn btn-secondary">Usar Gem</a>
+                    </div>
+                </div>
+                <div class="feature-visual animate-on-scroll">
+                    <img src="keto_coach_cooking_flat_white_v3_1769623200827.png" alt="Keto Coach">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Lowkey Finance (BADGE MOVED BELOW TEXT) -->
+        <section id="lowkey-finance" class="feature-section container">
+            <div class="feature-grid">
+                <div class="feature-content animate-on-scroll">
+                    <h2>Lowkey Finance: Control Financiero</h2>
+                    <p class="subheadline">Gestión de activos, ingresos y gastos en un dashboard totalmente minimalista.
+                    </p>
+                    <p style="margin-bottom: 24px; color: var(--text-secondary); font-size: 1.1rem;">Lowkey Finance es
+                        tu herramienta definitiva para controlar tu dinero. Registra inversiones, monitoriza activos en
+                        tiempo real y gestiona flujos de caja.</p>
+                    <ul class="feature-bullets">
+                        <li><span class="bullet-check">•</span> Portfolio de inversiones en tiempo real.</li>
+                        <li><span class="bullet-check">•</span> Tracking de activos (cripto, stocks, fondos).</li>
+                        <li><span class="bullet-check">•</span> Registro de ingresos y gastos previos.</li>
+                        <li><span class="bullet-check">•</span> Resumen visual de patrimonio neto.</li>
+                    </ul>
+                    <p style="font-weight: 800; margin: 32px 0 16px;">Tu dinero. Tu control. Tu claridad.</p>
+
+                    <div class="badge-upcoming-inline">PRÓXIMAMENTE</div>
+
+                    <div class="feature-buttons" style="margin-top: 24px;">
+                        <a href="#" class="btn btn-secondary">Notificarme al lanzamiento</a>
+                    </div>
+                </div>
+                <div class="feature-visual animate-on-scroll">
+                    <img src="lowkey_finance_illustration.png" alt="Finance Portfolio Sketch">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Integration (MOVED HERE) -->
+        <section id="integration" class="integration-section container">
+            <div class="section-header animate-on-scroll">
+                <h2>Conecta Tu Ecosistema</h2>
+                <p class="subheadline">Tu ecosistema de pensamiento conectado.</p>
+            </div>
+            <div class="integration-visual animate-on-scroll">
+                <img src="integration_circles_flat_white_v3_1769623221722.png" alt="Integración">
+            </div>
+            <div class="integration-content animate-on-scroll">
+                <p class="integration-p">UniversityGem se convierte en tu mentor personal para explorar ideas, mientras
+                    que Second Brain las organiza para siempre.</p>
+                <div class="benefits-list">
+                    <div class="benefit-item">✓ Captura ideas eficientemente.</div>
+                    <div class="benefit-item">✓ Planifica con asistencia de IA.</div>
+                    <div class="benefit-item">✓ Flujo continuo de conocimiento.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: FAQs -->
+        <section id="faqs" class="faqs-section container">
+            <div class="section-header animate-on-scroll" style="text-align: center; margin-bottom: 60px;">
+                <h2>Preguntas Frecuentes</h2>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item animate-on-scroll">
+                    <button class="accordion-header">
+                        ¿Es apto para principiantes?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sí, todos nuestros sistemas incluyen guías paso a paso para comenzar desde cero.</p>
+                    </div>
+                </div>
+                <div class="accordion-item animate-on-scroll">
+                    <button class="accordion-header">
+                        ¿Necesito una cuenta especial?
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Solo necesitas una cuenta de Google para acceder a través de la plataforma de Gemini.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Final CTA -->
+        <section class="grid-section container" style="background: var(--bg-color); padding: 100px 0;">
+            <div
+                style="text-align: center; background: var(--surface-color); padding: 80px 40px; border-radius: 40px; border: 3px solid var(--border-color); box-shadow: 10px 10px 0 var(--border-color);">
+                <h2 style="font-size: 3rem; font-weight: 800; margin-bottom: 20px; line-height: 1.1;">Construye Tu
+                    Sistema Mental</h2>
+                <p style="font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 40px;">Las herramientas para
+                    pensar mejor están a un clic.</p>
+                <a href="https://universitygem.app" class="btn btn-primary">Comienza Ahora</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container"
+            style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; padding: 80px 40px;">
+            <div class="footer-info">
+                <div class="logo" style="margin-bottom: 24px;">
+                    <img src="lowkey_logo.jpg" alt="Lowkey">
+                </div>
+                <p>Construyendo el futuro de la mente.</p>
+            </div>
+            <div class="footer-group">
+                <h4 style="margin-bottom: 20px;">Navegación</h4>
+                <ul style="list-style: none;">
+                    <li><a href="#hero" style="text-decoration: none; color: var(--text-secondary);">Inicio</a></li>
+                    <li><a href="#second-brain"
+                            style="text-decoration: none; color: var(--text-secondary);">Sistemas</a></li>
+                </ul>
+            </div>
+            <div class="footer-group">
+                <h4 style="margin-bottom: 20px;">Aprende</h4>
+                <ul style="list-style: none;">
+                    <li><a href="#university-gem"
+                            style="text-decoration: none; color: var(--text-secondary);">Learning</a></li>
+                    <li><a href="#faqs" style="text-decoration: none; color: var(--text-secondary);">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-group">
+                <h4 style="margin-bottom: 20px;">Contacto</h4>
+                <a href="mailto:lowkey.project1523@gmail.com"
+                    style="color: var(--text-primary); text-decoration: none; font-weight: 700;">Email Us</a>
+            </div>
+        </div>
+        <div class="container" style="padding: 40px; border-top: 2px solid var(--border-color); text-align: center;">
+            <p>&copy; 2026 Lowkey Project. By Rafael Ibarra</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
